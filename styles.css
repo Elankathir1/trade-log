@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-zoom {
+  animation: zoomIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.nav-item {
+  color: #64748b;
+  position: relative;
+}
+
+.nav-item.active {
+  background-color: #4f46e5;
+  color: white;
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+}
+
+.nav-item:not(.active):hover {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.calendar-day {
+  min-height: 120px;
+  background-color: rgba(30, 41, 59, 0.2);
+  border: 1px solid rgba(51, 65, 85, 0.3);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.calendar-day:hover {
+  border-color: #4f46e5;
+  background-color: rgba(30, 41, 59, 0.4);
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}
+
+.calendar-day.today {
+    border-color: #6366f1;
+    background-color: rgba(99, 102, 241, 0.05);
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+.metric-card {
+    transition: all 0.3s ease;
+}
+.metric-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.3);
+}

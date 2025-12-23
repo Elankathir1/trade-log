@@ -1,0 +1,5 @@
+{
+  "name": "TradeLog Pro Terminal",
+  "description": "Static enterprise trading journal with offline persistence.",
+  "requestFramePermissions": []
+}
